@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/workout1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My"
+            android:textSize="45sp"
+            android:textColor="@color/color4"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout"
+            android:textSize="45sp"
+            android:textColor="@color/color4"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flStart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/llLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/item_start_ripple">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/color4"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/flEdit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/flStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/item_setting">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setting"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_action_delete.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/item_circular_accent_border_ripple_background.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/item_circular_color1_border_ripple_background.xml" value="0.10181884765624993" />
+        <entry key="app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.1845" />
+        <entry key="app/src/main/res/drawable/item_circular_color_color1_border.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/item_setting.xml" value="0.1335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/activity_setting.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/items_row.xml" value="0.16259057971014493" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
