@@ -7,7 +7,10 @@ import com.example.darren.myworkout.databinding.ActivitySettingBinding
 import com.example.darren.myworkout.databinding.ItemsRowBinding
 
 
-class ItemsAdapter(private val items: ArrayList<ExerciseEntity>): RecyclerView.Adapter<ItemsAdapter.ViewHolder>() {
+class ItemsAdapter(private val items: ArrayList<ExerciseEntity>,
+                   private val updateListener:(id: Int)->Unit,
+                   private val deleteListener:(id: Int)->Unit
+): RecyclerView.Adapter<ItemsAdapter.ViewHolder>() {
 
     class ViewHolder(binding: ItemsRowBinding): RecyclerView.ViewHolder(binding.root){
         val llMain = binding.llMain
@@ -32,6 +35,13 @@ class ItemsAdapter(private val items: ArrayList<ExerciseEntity>): RecyclerView.A
             holder.llMain.setBackgroundColor(ContextCompat.getColor(context, R.color.lightGrey))
         } else{
             holder.llMain.setBackgroundColor(ContextCompat.getColor(context, R.color.white))
+        }
+
+        holder.ivEdit.setOnClickListener {
+            updateListener.invoke(item.id)
+        }
+        holder.ivDelete.setOnClickListener {
+            deleteListener.invoke(item.id)
         }
 
     }
